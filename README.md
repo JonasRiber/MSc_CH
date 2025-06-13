@@ -16,7 +16,7 @@ Any paths and functions that might contain or hint at sensitive information have
 Runs the caller scripts in the following order:
 - **pysam_mnv_all_mm.py**           (Input single samples)
 - **merge_call_files2.sh**          (merges the mismatches in single samples)
-- **apply_blacklist.sh **           (applies the various blacklists)
+- **apply_blacklist.sh**           (applies the various blacklists)
 - **pysam_consensus_depth.py**      (Input single samples and mismatch positions)
 - **merge_depth_files.sh**          (merges depth files)
 - **merge_calls_and_depth.sh**      (merges the mismatches corosponding depth)
