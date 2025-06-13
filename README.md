@@ -3,6 +3,7 @@
 
 This repository contains most of the code used for the CH variant calling and analysis.
 
-#### disclaimer 
-Since the data contains potentially sensitive personalized information, it is not made available here.
+#### Disclaimer 
+Since the data contains potentially sensitive personalized information, it is not available here.
 Additionally, not all the scripts are made available since they might contain internal patient IDs or similar.
+
