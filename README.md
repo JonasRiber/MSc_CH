@@ -29,8 +29,8 @@ Runs the caller scripts in the following order:
 - Manually run Rscript scripts/create_variant_patient_table.R results/annotated_samples/ data/0_positions/
   (Combine all the positions into one fill)
   
-**- pysam_consensus_depth **    (collect depth for all positions including non-mismatched ones - input single samples)
-**- merge_depth_files.sh**      (merge depth samples)
+- **pysam_consensus_depth**     (collect depth for all positions including non-mismatched ones - input single samples)
+- merge_depth_files.sh      (merge depth samples)
 
 - Manually run Rscript scripts/variant_patient_table2.R
   (Create variant patient matrix)
