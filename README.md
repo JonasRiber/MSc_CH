@@ -13,7 +13,11 @@ Any paths and functions that might contain or hint at sensitive information have
 
 
 ### Variant calling
-Runs the caller scripts in the following order:
+The workflow is run by being located in the directory with the workflow.py file and using:
+
+gwf run
+
+The workflow Runs the caller scripts in the following order:
 - **pysam_mnv_all_mm.py**           (Input single samples)
 - **merge_call_files2.sh**          (merges the mismatches in single samples)
 - **apply_blacklist.sh**           (applies the various blacklists)
@@ -37,6 +41,13 @@ Runs the caller scripts in the following order:
 
 
 ### Analysis scripts
-- 1visualize_calls.R
-- 2visualize_filtered_and_annotated.R
-- mut_signature.R
+Some of the included analysis scripts used to generate some of the plots in the report
+
+- **1visualize_calls.R**                      (creates summary plots right after the mismatch caller)
+- **2visualize_filtered_and_annotated.R**     (creates summary plots before the filtering script)
+- **dataset_overview.R**                      (dataset timeline plot)
+- **mut_signature.R**                         (Creates the mutational spectra from the called output)
+- **pheat_map.R**                             (Creates the heatmap plots)
+- **pval_analysis.R**                           (pvalue analysis and adjusted pvals)
+- **stepwise_depth.R**                        (Summary depth distributions through out the workflow, and additional bimodal investigation)
+- **variant_analysis.R**                        (variant count plots)  
