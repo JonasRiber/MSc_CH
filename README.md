@@ -18,6 +18,7 @@ The workflow is run by being located in the directory with the workflow.py file 
 gwf run
 
 The workflow Runs the caller scripts in the following order:
+
 - **pysam_mnv_all_mm.py**           (Input single samples)
 - **merge_call_files2.sh**          (merges the mismatches in single samples)
 - **apply_blacklist.sh**           (applies the various blacklists)
